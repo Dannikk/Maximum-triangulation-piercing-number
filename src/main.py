@@ -44,7 +44,7 @@ def get_max_piercing(_degrees: list) -> int:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Maximum triangulation piercing number")
     parser.add_argument('input', type=str, help='direction to input file')
-    parser.add_argument('-out', type=str, help='direction to output file', default='output.txt')
+    parser.add_argument('-out', type=str, help="direction to output file, default='output.txt'", default='output.txt')
     args = parser.parse_args()
     input_file = args.input
     output_file = args.out
